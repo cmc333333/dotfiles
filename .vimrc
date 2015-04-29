@@ -68,8 +68,18 @@ hi CursorLine cterm=none ctermbg=234
 highlight SentToCoq ctermbg=DarkCyan
 highlight WillSendToCoq ctermbg=DarkMagenta
 
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:rubycomplete_rails = 1
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_include_objectspace = 1
+let g:rubycomplete_include_object = 1
+
 augroup CursorLine
   au!
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 augroup END
+
+let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = "2"
